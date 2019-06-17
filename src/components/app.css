@@ -132,3 +132,14 @@ button:focus {
   padding: 10px;
   font-size: 1.1em;
 }
+
+.main-panel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.settings {
+  width: 200px;
+  background: red;
+}

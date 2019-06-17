@@ -127,8 +127,8 @@ class App extends React.Component<Props & { match: any; location: any; showExamp
         <div
           style={{
             height: `calc(100vh - ${LAYOUT.HeaderHeight}px)`,
-            position: 'relative',
           }}
+          className="main-panel"
         >
           <SplitPane
             split="vertical"
@@ -137,10 +137,12 @@ class App extends React.Component<Props & { match: any; location: any; showExamp
             pane1Style={{ display: 'flex' }}
             className="main-pane"
             pane2Style={{ overflow: 'scroll' }}
+            style={{ position: 'relative' }}
           >
             <InputPanel />
             <VizPane />
           </SplitPane>
+          <div className="settings"></div>
         </div>
       </div>
     );
