@@ -25,7 +25,6 @@
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 20px;
-  margin: 1%;
   margin-top: 25px;
 }
 
@@ -72,7 +71,11 @@
   width: 100%;
   margin-top: 10px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+.input-container input[type="checkbox"] {
+  margin-left: 0;
 }
 
 .vl-label {
@@ -83,6 +86,21 @@
   padding: 20px 0;
 }
 
-.download {
+.two {
   margin-top: 9px;
+}
+
+.create {
+  cursor: initial;
+  background: white;
+  flex-basis: 49%;
+  margin-top: 0;
+}
+
+.create:hover {
+  background: white;
+}
+
+.flex > label {
+  flex-basis: 49%;
 }
